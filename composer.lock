@@ -1,0 +1,209 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "51c8e65e4586f1bfbe0ab031dd66e1aa",
+    "packages": [
+        {
+            "name": "aternos/etcd",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aternosorg/php-etcd.git",
+                "reference": "f669741c7b4fce095eab7d3af9c6ce0bbd332829"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aternosorg/php-etcd/zipball/f669741c7b4fce095eab7d3af9c6ce0bbd332829",
+                "reference": "f669741c7b4fce095eab7d3af9c6ce0bbd332829",
+                "shasum": ""
+            },
+            "require": {
+                "ext-grpc": "*",
+                "flexihash/flexihash": "^2.0",
+                "google/protobuf": "^v3.21.1",
+                "grpc/grpc": "^1.42.0",
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "grpc/",
+                    "Aternos\\Etcd\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Neid",
+                    "email": "matthias@aternos.org"
+                }
+            ],
+            "description": "PHP gRPC client for etcd v3",
+            "support": {
+                "issues": "https://github.com/aternosorg/php-etcd/issues",
+                "source": "https://github.com/aternosorg/php-etcd/tree/v1.5.0"
+            },
+            "time": "2022-06-07T11:45:48+00:00"
+        },
+        {
+            "name": "flexihash/flexihash",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pda/flexihash.git",
+                "reference": "497ba5782606d998f8ab0b4e5942e3a799bec018"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pda/flexihash/zipball/497ba5782606d998f8ab0b4e5942e3a799bec018",
+                "reference": "497ba5782606d998f8ab0b4e5942e3a799bec018",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8",
+                "satooshi/php-coveralls": "~1.0",
+                "squizlabs/php_codesniffer": "^2.3",
+                "symfony/config": "^2.0.0",
+                "symfony/console": "^2.0.0",
+                "symfony/filesystem": "^2.0.0",
+                "symfony/stopwatch": "^2.0.0",
+                "symfony/yaml": "^2.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Flexihash\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Annesley",
+                    "email": "paul@annesley.cc",
+                    "homepage": "http://paul.annesley.cc"
+                },
+                {
+                    "name": "Dom Morgan",
+                    "email": "dom@d3r.com",
+                    "homepage": "https://d3r.com"
+                }
+            ],
+            "description": "Flexihash is a small PHP library which implements consistent hashing",
+            "homepage": "https://github.com/pda/flexihash",
+            "support": {
+                "issues": "https://github.com/pda/flexihash/issues",
+                "source": "https://github.com/pda/flexihash/tree/v2.0.2"
+            },
+            "time": "2016-04-22T21:03:23+00:00"
+        },
+        {
+            "name": "google/protobuf",
+            "version": "v3.25.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/protocolbuffers/protobuf-php.git",
+                "reference": "1fb247e72df401c863ed239c1660f981644af5db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/protocolbuffers/protobuf-php/zipball/1fb247e72df401c863ed239c1660f981644af5db",
+                "reference": "1fb247e72df401c863ed239c1660f981644af5db",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=5.0.0"
+            },
+            "suggest": {
+                "ext-bcmath": "Need to support JSON deserialization"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Google\\Protobuf\\": "src/Google/Protobuf",
+                    "GPBMetadata\\Google\\Protobuf\\": "src/GPBMetadata/Google/Protobuf"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "proto library for PHP",
+            "homepage": "https://developers.google.com/protocol-buffers/",
+            "keywords": [
+                "proto"
+            ],
+            "support": {
+                "source": "https://github.com/protocolbuffers/protobuf-php/tree/v3.25.1"
+            },
+            "time": "2023-11-15T21:36:03+00:00"
+        },
+        {
+            "name": "grpc/grpc",
+            "version": "1.57.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/grpc/grpc-php.git",
+                "reference": "b610c42022ed3a22f831439cb93802f2a4502fdf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/grpc/grpc-php/zipball/b610c42022ed3a22f831439cb93802f2a4502fdf",
+                "reference": "b610c42022ed3a22f831439cb93802f2a4502fdf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "google/auth": "^v1.3.0"
+            },
+            "suggest": {
+                "ext-protobuf": "For better performance, install the protobuf C extension.",
+                "google/protobuf": "To get started using grpc quickly, install the native protobuf library."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Grpc\\": "src/lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "gRPC library for PHP",
+            "homepage": "https://grpc.io",
+            "keywords": [
+                "rpc"
+            ],
+            "support": {
+                "source": "https://github.com/grpc/grpc-php/tree/v1.57.0"
+            },
+            "time": "2023-08-14T23:57:54+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}

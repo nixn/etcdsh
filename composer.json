@@ -1,0 +1,19 @@
+{
+    "name": "nix/etcdsh",
+    "description": "A PHP session handler, which stores the session data in an ETCD cluster.",
+    "type": "library",
+    "require": {
+        "aternos/etcd": "^1.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "nix\\etcdsh\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nix"
+        }
+    ]
+}
