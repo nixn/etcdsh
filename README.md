@@ -1,4 +1,4 @@
-# nix/etcdsh
+# nixn/etcdsh
 
 A [PHP][php] [session handler][php-sh], which stores the session data in an [ETCD cluster][etcd]
 and enables automatic cleaning of sessions with ETCD's [lease system][etcd-lease].
@@ -25,7 +25,7 @@ etcdsh uses the [Aternos gRPC ETCD client][aternos-etcd], which needs the extens
 
 ```sh
 apt install php-grpc
-composer require nix/etcdsh
+composer require nixn/etcdsh
 ```
 
 ### Usage
@@ -33,13 +33,15 @@ composer require nix/etcdsh
 use nix\etcdsh\EtcdSessionHandler;
 use Aternos\Etcd\Client as EtcdClient;
 
-session_name('MY_SESSION_NAME');
+session_name('MY_SESSION_NAME'); // recommended to set, default is PHPSESSID
 session_set_save_handler(new EtcdSessionHandler(new EtcdClient('localhost')));
-session_save_path('/sessions/MY_SESSION_NAME/');
+session_save_path('sessions/'); // used as prefix in ETCD ("<name>/<id>:<lease-id>" appended)
 ini_set('session.gc_probability', 0); // GC not needed with EtcdSessionHandler
 ini_set('session.gc_maxlifetime', 1440); // set lifetime to your liking
 session_start();
 ```
+
+NOTE: The package name is `nix\etcdsh`, not ~~`nixn\etcdsh`~~.
 
 ## License
 Copyright © 2023 nix <https://keybase.io/nixn>
